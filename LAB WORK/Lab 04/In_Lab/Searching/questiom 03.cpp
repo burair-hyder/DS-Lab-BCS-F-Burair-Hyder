@@ -21,7 +21,7 @@ int main(){
 	bool flag=true;
 	int diff = arr[1]-arr[0];
 	
-	for (int i=0;i<value;i++){
+	for (int i=0;i<value-1;i++){
 		
 		if (arr[i+1]-arr[i]!=diff){
 			cout <<"data no uniform";
@@ -50,7 +50,7 @@ void bubblesort(int *arr,int bound){
 	while(noswap==false){
 		noswap=true;
 		for (int i=0;i<boundry;i++){
-			if (arr[i]<arr[i+1]){
+			if (arr[i]>arr[i+1]){
 				temp = arr[i];
 				arr[i] = arr[i+1];
 				arr[i+1] = temp;
