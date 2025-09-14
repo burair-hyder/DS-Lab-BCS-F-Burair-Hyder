@@ -222,6 +222,7 @@ int main(){
 	list2.push_front(45);
 	list2.push_front(35);
 	list2.push_front(25);
+	list2.PrintLL();
 	
 	cout <<"printing merged list"<<endl;
 	LinkedList list3;
