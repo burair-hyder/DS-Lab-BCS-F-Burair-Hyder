@@ -27,8 +27,10 @@ void InsertionSort(int arr[],int size){
 	
 }
 
-int BinarySearch(int arr[],int size,int left,int right,int target){
+int BinarySearch(int arr[],int size,int target){
 	
+	int left =0;
+	int right = size-1;
 	while (left <= right){
 		
 		int mid = left + (right-left)/2;
@@ -83,7 +85,7 @@ int main(){
 	cout <<"Enter Value to Search:";
 	cin >>tofind;
 	
-	int index =BinarySearch(arr,n,0,n-1,tofind);
+	int index =BinarySearch(arr,n,tofind);
 	
 	if (index!=-1){
 		cout <<"Value found at index :"<<index<<endl;
