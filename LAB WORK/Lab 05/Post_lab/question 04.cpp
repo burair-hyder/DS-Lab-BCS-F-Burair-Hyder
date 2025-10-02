@@ -23,4 +23,34 @@ int main(){
 	cin >> m;
 	cin >> n;
 	cout <<"Ackermann(" << m <<","<< n <<") = " << ackermann(m,n)<<endl;
+
+	/*
+	ackermann(1, 2):
+	
+	A(1, 2)
+	= A(0, A(1, 1))                  // since m>0 and n>0
+	
+	Now find A(1, 1):
+	A(1, 1)
+	= A(0, A(1, 0))
+	
+	Now find A(1, 0):
+	A(1, 0)
+	= A(0, 1)                        // since m>0 and n=0
+	= 1 + 1 = 2
+	
+	So, A(1, 0) = 2
+	
+	Now go back:
+	A(1, 1) = A(0, A(1, 0)) = A(0, 2)
+	A(0, 2) = 2 + 1 = 3
+	
+	So, A(1, 1) = 3
+	
+	Now go back again:
+	A(1, 2) = A(0, A(1, 1)) = A(0, 3)
+	A(0, 3) = 3 + 1 = 4
+	
+	 A(1, 2) = 4
+*/
 }
