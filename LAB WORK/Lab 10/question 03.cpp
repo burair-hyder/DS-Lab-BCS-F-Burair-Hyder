@@ -43,16 +43,13 @@ int main() {
     int arr1[] = {1, 23, 12, 9, 30, 2, 50};
     int n1 = 7;
     int k1 = 3;
-
-    cout << "Input: [1, 23, 12, 9, 30, 2, 50], K = 3" << endl;
+	cout <<"Input Array: [ ";
+	for (int i=0;i<n1;i++){
+		cout <<arr1[i]<<" ";
+	}
+	cout <<"]"<<endl;
     cout << "K-th largest element: " << findKthlargest(arr1, n1, k1) << endl << endl;
 
-    int arr2[] = {12, 3, 5, 7, 19};
-    int n2 = 5;
-    int k2 = 2;
-
-    cout << "Input: [12, 3, 5, 7, 19], K = 2" << endl;
-    cout << "K-th largest element: " << findKthlargest(arr2, n2, k2) << endl;
 
     return 0;
 }
