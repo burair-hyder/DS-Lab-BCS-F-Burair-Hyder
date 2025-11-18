@@ -60,8 +60,6 @@ void heapSort(int *arr, int n ){
 	
 }
 
-#include <iostream>
-using namespace std;
 
 int main() {
     int arr[] = {0, 7, 6, 5, 4};
