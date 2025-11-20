@@ -111,7 +111,7 @@ int main(){
 		newarr[i] = arr2[j];
 		j++;
 	}
-	cout <<"Combined Sorted Array: "<<endl;
+	cout <<"Combined Sorted Array using Radix Sort: "<<endl;
 	cout <<"{ ";
 	RadixSort(newarr,20);
 	printArray(newarr,20);
